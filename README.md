@@ -8,7 +8,7 @@ Requirements:
 4. uWSGI
 
 Directory Tree:
-'''
+
 .
 ├── djangoproject
 │   ├── __init__.py
@@ -37,4 +37,3 @@ Directory Tree:
 │   ├── admin
 │   └── pymage
 └── tree.txt
-'''
