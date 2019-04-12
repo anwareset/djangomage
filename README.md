@@ -1,5 +1,4 @@
-PyMAGE
-Is a web-based application, built using the Django Framework and PIL (Python Imaging Library).
+PyMAGE is a web-based application, built using the Django Framework and PIL (Python Imaging Library).
 
 Requirements:
 1. Python 3
