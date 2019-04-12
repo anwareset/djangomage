@@ -1,0 +1,66 @@
+
+
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'index' %}">
+        <div class="sidebar-brand-icon">
+          <i class="fab fa-gripfire"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">PYMAGE</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Grayscale -->
+      <li class="nav-item {{ indexActive }}">
+        <a class="nav-link" href="{% url 'index' %}">
+          <i class="fas fa-fw fa-star-half-alt"></i>
+          <span>Grayscale</span></a>
+      </li>
+
+      <!-- Nav Item - Rotate -->
+      <li class="nav-item {{ rotateActive }}">
+        <a class="nav-link" href="{% url 'rotate' %}">
+          <i class="fas fa-fw fa-redo"></i>
+          <span>Rotate</span></a>
+      </li>
+
+      <!-- Nav Item - Flip -->
+      <li class="nav-item {{ flipActive }}">
+        <a class="nav-link" href="{% url 'flip' %}">
+          <i class="fas fa-fw fa-sync-alt"></i>
+          <span>Flip</span></a>
+      </li>
+
+      <!-- Nav Item - Crop -->
+      <li class="nav-item {{ cropActive }}">
+        <a class="nav-link" href="{% url 'crop' %}">
+          <i class="fas fa-fw fa-crop-alt"></i>
+          <span>Crop</span></a>
+      </li>
+
+      <!-- Nav Item - Scale -->
+      <li class="nav-item {{ scaleActive }}">
+        <a class="nav-link" href="{% url 'scale' %}">
+          <i class="fab fa-quinscape"></i>
+          <span>Scale</span></a>
+      </li>
+
+      <!-- Nav Item - Invert -->
+      <li class="nav-item {{ invertActive }}">
+        <a class="nav-link" href="{% url 'invert' %}">
+          <i class="fas fa-fill-drip"></i>
+          <span>Invert</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>

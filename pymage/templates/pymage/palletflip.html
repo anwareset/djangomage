@@ -1,0 +1,52 @@
+
+              <!-- Circle Buttons -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Original Image
+                    
+                    <form method="GET" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                      {% csrf_token %}
+                      <div class="input-group" style="margin-left: 600px">
+
+                        <input type="hidden" name="displayFromPallet" value="{{ displayFile }}" />
+                        <input type="hidden" name="leftright" value="leftright" />
+                       
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-primary btn-icon-split">
+                            <span class="icon text-white-50">
+                              <i class="fas fa-exchange-alt"></i>
+                            </span>
+                            <span class="text">Flip Left Right</span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </form>
+
+                    <form method="GET" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                      {% csrf_token %}
+                      <div class="input-group">
+
+                        <input type="hidden" name="displayFromPallet" value="{{ displayFile }}" />
+                        <input type="hidden" name="topbottom" value="topbottom" />
+                       
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-primary btn-icon-split">
+                            <span class="icon text-white-50">
+                              <i class="fas fas fa-angle-double-up"></i>
+                            </span>
+                            <span class="text">Flip Top Bottom</span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </form>
+
+                  </h6>
+                </div>
+                <div class="card-body">
+                  <div style="padding: 20px;">
+                   <center><img src="http://127.0.0.1{{ displayFile }}" alt="Original Image" style="max-height: 100%; max-width: 100%"></center>
+                  </div>
+                </div>
+              </div>

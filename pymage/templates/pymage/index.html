@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+{% include "pymage/partials/head.html" %}
+<!-- End of Head -->
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    {% include "pymage/partials/sidebar.html" %}
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        {% include "pymage/partials/topbar.html" %}
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Grayscale</h1>
+          </div>
+
+          {% if pageStatus == 1 %}
+            <!-- Card Upload -->
+            {% include "pymage/partials/upload.html" %}
+
+          {% endif %}
+          {% if pageStatus == 2 %}
+            <!-- Card Palletgrey -->
+            {% include "pymage/partials/result.html" %}
+          {% endif %}
+
+          <!-- Card Information -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <div class="card-header">
+                  <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-info-circle"></i> Information</h6>
+                </div>
+                <div class="card-body">
+
+                  On the Grayscale Menu, you can do image manipulation in the form of convert color images to gray images. This can be done by changing each pixel in a 24-bit RGB image to an 8-bit Grayscale image.
+                </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      {% include "pymage/partials/footer.html" %}
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+  <!-- Bootstrap & JavaScript Plugins-->
+  {% include "pymage/partials/plugin.html" %}
+
+</body>
+
+</html>
