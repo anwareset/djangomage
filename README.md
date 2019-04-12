@@ -3,15 +3,15 @@ is a web-based application, built using the Django Framework and PIL (Python Ima
 
 
 ## Requirements
-'''text
+```text
 1. Python 3
 2. Pillow Library
 3. NGINX Web Server
 4. uWSGI
-'''
+```
 
 ## Direcory
-'''text
+```text
 djangoproject/
 ├── djangoproject
 │   ├── __init__.py
@@ -40,4 +40,4 @@ djangoproject/
 │   ├── admin
 │   └── pymage
 └── tree.txt
-'''
+```
