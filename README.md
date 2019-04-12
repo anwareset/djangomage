@@ -1,7 +1,8 @@
 # PyMAGE
 is a web-based application, built using the Django Framework and PIL (Python Imaging Library).
 
-## Requirements:
+
+## Requirements
 '''text
 1. Python 3
 2. Pillow Library
@@ -9,7 +10,7 @@ is a web-based application, built using the Django Framework and PIL (Python Ima
 4. uWSGI
 '''
 
-## Direcory:
+## Direcory
 '''text
 djangoproject/
 ├── djangoproject
