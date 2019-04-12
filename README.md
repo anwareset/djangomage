@@ -9,7 +9,6 @@ Requirements:
 
 Directory Tree:
 
-.
 ├── djangoproject
 │   ├── __init__.py
 │   ├── __pycache__
