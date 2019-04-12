@@ -10,7 +10,7 @@ is a web-based application, built using the Django Framework and PIL (Python Ima
 4. uWSGI
 ```
 
-## Direcory
+## Directory
 ```text
 djangoproject/
 ├── djangoproject
