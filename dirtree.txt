@@ -20,7 +20,7 @@ Directory Tree:
 │   ├── __pycache__
 │   ├── templates
 │   │   └── pymage
-│   │       ├── partials
+│   │       └── partials
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
