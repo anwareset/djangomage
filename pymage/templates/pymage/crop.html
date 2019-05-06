@@ -33,8 +33,19 @@
             <h1 class="h3 mb-0 text-gray-800">Crop</h1>
           </div>
 
-          <!-- Card Upload -->
-          {% include "pymage/partials/upload.html" %}
+          {% if pageStatus == 1 %}
+            <!-- Card Upload -->
+            {% include "pymage/partials/upload.html" %}
+
+          {% endif %}
+          {% if pageStatus == 2 %}
+            <!-- Card Palletgrey -->
+            {% include "pymage/palletcrop.html" %}
+          {% endif %}
+          {% if pageStatus == 3 %}
+            <!-- Card Palletgrey -->
+            {% include "pymage/partials/result.html" %}
+          {% endif %}
           
           <!-- Card Information -->
           <div class="card shadow mb-4">

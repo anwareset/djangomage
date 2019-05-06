@@ -1,0 +1,28 @@
+
+              <!-- Circle Buttons -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Original Image
+                    <form method="GET" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                      {% csrf_token %}
+                      <div class="input-group" style="margin-left: 890px;">
+                        <input type="hidden" name="displayFromPallet" value="{{ displayFile }}" />
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="submit" id="act" name="crop" disabled="disabled">
+                            <i class="fas fa-check fa-sm"></i>
+                          </button>
+                        </div>
+                      </div>
+                  </h6>
+                </div>
+                <div class="card-body">
+                  <div style="padding: 20px;">
+                   <center><img src="http://127.0.0.1{{ displayFile }}" alt="Original Image" id="cropbox"></center>
+                  </div>
+                </div>
+                <input type="hidden" id="x" name="x" />
+                <input type="hidden" id="y" name="y" />
+                <input type="hidden" id="w" name="w" />
+                <input type="hidden" id="h" name="h" />
+              </form>
+              </div>

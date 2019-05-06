@@ -18,3 +18,21 @@
 
   <!-- Drag and Drop Upload-->
   <script src="{% static "pymage/assets/app.js" %}"></script>
+
+  <!-- CropJS -->
+  <script src="{% static "pymage/vendor/jcrop/js/jquery.Jcrop.min.js" %}"></script>
+  <script type="text/javascript">
+    $(function(){
+        $("#cropbox").Jcrop({
+        onSelect: updateCoords,
+        });
+    });
+    function updateCoords(c)
+    {
+        $("#x").val(c.x);
+        $("#y").val(c.y);
+        $("#w").val(c.w);
+        $("#h").val(c.h);
+        $("#act").removeAttr("disabled");
+    };
+  </script>
