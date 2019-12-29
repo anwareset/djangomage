@@ -1,0 +1,25 @@
+<!-- Circle Buttons -->
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Query Image</h6>
+  </div>
+  <div class="card-body">
+    <div style="padding: 20px;">
+      <center><img src="http://127.0.0.1{{ displayFile }}" alt="Query Image"></center>
+    </div>
+  </div>
+</div>
+
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Results Image</h6>
+  </div>
+  <div class="card-body">
+    {% for score in scores %}
+    <figure style="float: left; margin-right: 30px; margin-bottom: 30px;">
+      <img src="http://127.0.0.1{{ score.1 }}" height="200px">
+      <figcaption>Distance: {{ score.0 }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+</div>

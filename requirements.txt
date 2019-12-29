@@ -4,10 +4,10 @@ decorator
 Django                  
 h5py                 
 imageio              
-Keras                 
+Keras>=2.3.1                 
 Keras-Applications    
 Keras-Preprocessing 
-tensorflow
+tensorflow>=2.0.0
 tensorflow-estimator==2.0.0
 kiwisolver      
 matplotlib      

@@ -25,7 +25,7 @@ SECRET_KEY = 'k$e=di3m)+&yzm#55xbtpyv4#ex_v-(lhz74g^@6xv6cb4gb&w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['deepweb.onion', '127.0.0.1']
+ALLOWED_HOSTS = ['django.local', '127.0.0.1']
 
 
 # Application definition
@@ -76,14 +76,11 @@ WSGI_APPLICATION = 'djangoproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangoapp',
-        'USER': 'root',
-        'PASSWORD':'',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 
 # Password validation
