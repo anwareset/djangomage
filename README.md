@@ -40,7 +40,7 @@ djangoproject/
 │   ├── urls.py
 |   ├── cari_ciri.py
 │   └── views.py
-└── static│
+└── static
     ├── admin
     └── pymage
 
