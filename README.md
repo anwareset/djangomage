@@ -4,10 +4,8 @@ is a web-based application, built using the Django Framework and PIL (Python Ima
 
 ## Requirements
 ```text
-1. Python 3
-2. Pillow Library
-3. NGINX Web Server
-4. uWSGI
+Just do this command
+pip install -r requirements.txt
 ```
 
 ## Directory
