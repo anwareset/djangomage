@@ -29,3 +29,6 @@ six
 sqlparse
 uWSGI  
 wheel
+scikit-learn
+learn
+Pandas
