@@ -1,10 +1,10 @@
 # PyMAGE
-is a web-based application, built using the Django Framework and PIL (Python Imaging Library).
+is a web-based application, built using the Django Framework. in it you will find the ordinary features of the Python Imaging Library (PIL), including a machine learning using VGG16 which is used as an Image Search Engine.
 
 
 ## Requirements
-```text
 Just do this command
+```text
 pip install -r requirements.txt
 ```
 
@@ -19,6 +19,8 @@ djangoproject/
 │   └── wsgi.py
 ├── manage.py
 ├── media
+|   ├── ciri
+|   └── img
 ├── pymage
 │   ├── admin.py
 │   ├── apps.py
@@ -33,6 +35,7 @@ djangoproject/
 │   │       └── partials
 │   ├── tests.py
 │   ├── urls.py
+|   ├── cari_ciri.py
 │   └── views.py
 ├── static
 │   ├── admin
