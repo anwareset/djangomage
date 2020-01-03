@@ -8,7 +8,7 @@ Keras>=2.3.1
 Keras-Applications    
 Keras-Preprocessing 
 tensorflow>=2.0.0
-tensorflow-estimator==2.0.0
+tensorflow-estimator<2.1.0,>=2.0.1
 kiwisolver      
 matplotlib      
 mysqlclient     
