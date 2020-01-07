@@ -1,4 +1,4 @@
-media/confusion.csv
+media/*.csv
 media/*.jpg
 media/img/*.jpg
 media/*.csv
