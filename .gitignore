@@ -1,6 +1,7 @@
 media/*.csv
 media/*.jpg
 media/img/*.jpg
+media/*.csv
 media/ciri/*.pkl
 djangoproject/__pycache__/*.pyc
 pymage/__pycache__/*.pyc
