@@ -2,5 +2,5 @@ media/*.csv
 media/*.jpg
 media/img/*.jpg
 media/ciri/*.pkl
-djangoproject/__pycache__/*
-pymage/__pycache__/*
+djangoproject/__pycache__/*.pyc
+pymage/__pycache__/*.pyc
