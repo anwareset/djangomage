@@ -23,7 +23,8 @@ djangoproject/
 ├── manage.py
 ├── media
 |   ├── ciri
-|   └── img
+|   ├── img
+|   └── confusion.csv
 ├── pymage
 │   ├── admin.py
 │   ├── apps.py
