@@ -22,9 +22,9 @@ djangoproject/
 │   └── wsgi.py
 ├── manage.py
 ├── media
-|   ├── ciri
-|   ├── img
-|   └── confusion.csv
+│   ├── ciri
+│   ├── img
+│   └── confusion.csv
 ├── pymage
 │   ├── admin.py
 │   ├── apps.py
