@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.views.generic import TemplateView
 from django.core.files.storage import FileSystemStorage
 from PIL import Image
-from sklearn.metrics import accuracy_score, precision_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import numpy as np
 import cv2
 import glob
@@ -88,6 +88,8 @@ def seek(request):
 		pred = datacsv.predict.tolist()
 		accuracy = int(accuracy_score(actual,pred) * 100)
 		precision = int(precision_score(actual,pred) * 100)
+		recall = int(recall_score(actual,pred) * 100)
+		f1score = int(f1_score(actual,pred) * 100)
 		return render(request,'pymage/seek.html', {
 			'displayFile':displayFile,
 			'pageStatus':pageStatus,
@@ -97,7 +99,9 @@ def seek(request):
 			'nearest':nearest,
 			'dataCounter':dataCounter,
 			'accuracy':accuracy,
-			'precision':precision
+			'precision':precision,
+			'recall':recall,
+			'f1score':f1score
 			})
 	return render(request, 'pymage/seek.html', {
 		'pageStatus':pageStatus,
